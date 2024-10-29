@@ -1,0 +1,162 @@
+/* .login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  .login-background {
+    width: 50%; 
+    height: auto; 
+    
+  }
+  
+  .login-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+  }
+  .login-logo{ 
+  width: 190px;
+ height: 106px;
+  margin-top:30px;
+
+  }
+  .or_simple {
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+  margin-bottom: 113px;
+  text-align: center;
+
+}
+
+  .login-form input {
+    width:100%;
+     padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    color: #3897f0;
+    font-size: 12px;
+  }
+  
+  .signup-link {
+    width:100%;
+    padding: 10px;
+   margin: 8px 0;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+    margin-top: 20px;
+  } */
+
+  .login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 32px;
+    padding: 20px;
+
+    /* border: 1px solid #ddd; */
+   
+}
+
+.login-image {
+    width: 50%;
+    align-items: start;
+    background: url('Backround.png') no-repeat center center;
+    background-size: cover;
+    margin-right: 86px;
+}
+
+.login-form-container {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+     /* margin-left: 32px;
+    */
+    
+}
+
+.login-logo img{
+align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-input {
+  width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-or {
+    text-align: center;
+    margin: 20px 0;
+    color: #DBDBDB 1 px;
+}
+
+.forgot-password,
+.signup-link {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.signup-box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 26px;
+}

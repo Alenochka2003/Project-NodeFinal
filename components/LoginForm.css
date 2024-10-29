@@ -133,11 +133,15 @@ align-items: center;
     cursor: pointer;
 }
 
-.login-or {
-    text-align: center;
-    margin: 20px 0;
-    color: #DBDBDB 1 px;
+ .login-or {
+ display: flex;
+ align-items: center;
+ text-align: center;
+ margin:  20px 0;
+ font-size: 13px;
+ color: #737373;
 }
+
 
 .forgot-password,
 .signup-link {

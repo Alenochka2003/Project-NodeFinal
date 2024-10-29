@@ -1,6 +1,8 @@
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import './ResetPassword.css';
+
 
 const ResetPassword = () => {
   const validationSchema = Yup.object({
@@ -13,7 +15,7 @@ const ResetPassword = () => {
 
   return (
     <div className="reset-container">
-      <h2>Reset Password</h2>
+     
       <Formik
         initialValues={{ email: '' }}
         validationSchema={validationSchema}

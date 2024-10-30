@@ -91,7 +91,7 @@ your contact information to Instagram.<a href='#'>Learn More</a>
 </div>
 
       <div className="signup-box">
-                      <p>Don,t have an account? <Link to="/" className="signup-link">Log in </Link> </p>
+                      <p>Have  an account? <Link to="/" className="signup-link">Log in </Link> </p>
                   </div>
     </div>
   );

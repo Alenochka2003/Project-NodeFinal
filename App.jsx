@@ -4,6 +4,7 @@ import ResetPassword from './components/ResetPassword';
 import SignUp from './components/SignUp';
 import { Home } from "./atoms/Home";
 
+
 import './App.css'
 
 function App() {

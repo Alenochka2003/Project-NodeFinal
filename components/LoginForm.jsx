@@ -55,30 +55,79 @@
 
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ICHGRA from '../assets/ICHGRA 2.png';
 import Background from '../assets/Background.png'; 
 import { Link } from "react-router-dom"; 
 import HorizontalDivider from "../assets/Horizontal_Divider.svg"; 
 import './LoginForm.css'; 
+import { $api } from '../api/api';
 
 const LoginForm = () => {  
   const [username, setUsername] = useState('');  
   const [password, setPassword] = useState('');  
   const [error, setError] = useState('');  
-  
-  const handleSubmit = (e) => {      
-    e.preventDefault();      
-    if (username === '' || password === '') {          
-      setError('Введите логин и пароль');      
-    } else if (username === 'existingUser') {          
-      setError('Пользователь уже существует');      
-    } else if (password !== 'correctPassword') {          
-      setError('Неверный пароль');      
-    } else {          
-      setError('');          
-      alert('Успешный вход!');      
-    }  
-  };  
+  const navigate = useNavigate();
+
+
+  // отправляем фэтчзапросы 
+  // const handleSubmit = (e) => {      
+  //   e.preventDefault(); 
+    
+
+    // $api.post("/auth/login", { username, password })
+    // .then(response => {
+    //   console.log(response.data);
+    //     alert('Успешный вход!');
+    // })
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+    
+      try {
+        const response = await $api.post("/auth/login", { username,password });
+        if (response.data.success) {
+          setError('');
+          alert('Успешный вход!');
+          navigate('/home');  // Перенаправление на главную страницу
+        } else {
+          setError(response.data.message || 'Ошибка авторизации');
+        }
+      } catch (error) {
+        if (error.response) {
+          // Сервер ответил, но с ошибкой
+          setError(error.response.data.message || 'Ошибка авторизации');
+        } else {
+          // Ошибка сети
+          setError('Ошибка сети');
+        }
+      }
+    };
+    
+    
+  // $api.post("/auth/login", username);
+
+
+      //     setError('Ошибка: ' + error.response.data.message || 'Ошибка при входе');
+      //     console.error(error.response.data); // Log the response from server
+      // } else {
+      //     console.error('Ошибка сети:', error.message);
+      // }
+    
+ 
+
+
+  //   if (username === '' || password === '') {          
+  //     setError('Введите логин и пароль');      
+  //   } else if (username === 'existingUser') {          
+  //     setError('Пользователь уже существует');      
+  //   } else if (password !== '19841990') {          
+  //     setError('Неверный пароль');      
+  //   } else {          
+  //     setError('');          
+  //     alert('Успешный вход!');      
+  //   }  
+  // };  
 
   return (      
     <div className="login-container">          
@@ -116,7 +165,7 @@ const LoginForm = () => {
         </div>                  
       </div>                                       
     </div>    
-  ); 
+  );
 };
 
 export default LoginForm;

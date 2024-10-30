@@ -95,11 +95,13 @@
     
 }
 
-.login-logo img{
-align-items: center;
-    font-family: 'Arial', sans-serif;
+.login-logo{
+   align-items: center;
     font-size: 2em;
     margin-bottom: 20px;
+    width: 190px;
+    height: 106px;
+    
 }
 
 .login-form {

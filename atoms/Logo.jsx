@@ -10,7 +10,7 @@ export const Logo = () => {
       >
         <rect width="97" height="54.5625" fill="url(#pattern0_1_3871)" />
         <defs>
-          <pattern
+          <pattern  
             id="pattern0_1_3871"
             patternContentUnits="objectBoundingBox"
             width="1"

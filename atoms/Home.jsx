@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export const Home = ({ state = true }) => {
     return (
       <svg
@@ -18,3 +20,7 @@ export const Home = ({ state = true }) => {
     );
   };
   
+
+  Home.propTypes = {
+    state: PropTypes.bool
+  }

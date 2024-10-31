@@ -85,10 +85,9 @@ const LoginForm = () => {
       e.preventDefault();
     
       try {
-        const response = await $api.post("/auth/login", { username,password });
-        if (response.data.success) {
+        const response = await $api.post("/auth/login", {email: username,password });
+        if (response.status === 200) {
           setError('');
-          alert('Успешный вход!');
           navigate('/home');  // Перенаправление на главную страницу
         } else {
           setError(response.data.message || 'Ошибка авторизации');

@@ -1,7 +1,8 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 2rem; */
+  /* text-align: center; */
+
 }
 
 
@@ -40,4 +41,43 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+/* App.css */
+.app {
+  display: flex;
+}
+
+.sidebar {
+  /* width: 2px; */
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
 }

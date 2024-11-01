@@ -1,0 +1,104 @@
+/* Sidebar.css */
+.sidebar {
+  position: absolute;
+  left: 0;
+}
+
+.log_logo {
+  /* margin-top: 28px; */
+padding: 15px;
+  width: 97px;
+  
+ 
+  /* height: 106px; */
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+ 
+}
+
+.sidebar .menu li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar .menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar .menu li a {
+  color: black; /* Set link color to black */
+  text-decoration: none; /* Optional: removes underline */
+  
+}
+
+.icon {
+  margin-right: 10px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+ 
+  
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  
+}
+
+.menu-item-container {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  justify-content: flex-start;
+  gap: 16px; /* space between icon and text */
+}
+
+.icon-home {
+  font-size: 16px;
+
+  /* width: 20px;
+  height: 20px;
+  margin-right: 8px;  */
+}
+
+ /* доработать  */
+/* PostGrid.css */
+/* .post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+} */

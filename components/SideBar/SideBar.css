@@ -78,7 +78,7 @@ padding: 15px;
 
  /* доработать  */
 /* PostGrid.css */
-/* .post-grid {
+.post-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -101,4 +101,6 @@ padding: 15px;
   padding: 10px;
   font-size: 14px;
   color: #333;
-} */
+}
+
+

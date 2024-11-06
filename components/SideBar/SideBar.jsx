@@ -181,7 +181,7 @@ function Sidebar({ onCreatePost }) {
         ))}
       </ul>
 
-      {/* Overlay panel */}
+      Overlay panel
       {activePanel && (
         <div className="overlay" onClick={handleClosePanel}>
           <div className="panel" onClick={(e) => e.stopPropagation()}>
@@ -196,7 +196,7 @@ function Sidebar({ onCreatePost }) {
 }
 
 Sidebar.propTypes = {
-  onCreatePost: PropTypes.func.isRequired, // Убедитесь, что onCreatePost является функцией
+  onCreatePost: PropTypes.func.isRequired, 
 };
 
 export default Sidebar;

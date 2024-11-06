@@ -68,6 +68,7 @@ const LoginForm = () => {
           <div className="login-or">                  
             <span className="or-text"> 
               <img src={HorizontalDivider} alt="Divider" />  OR  <img src={HorizontalDivider} alt="Divider" /> 
+              
             </span>                    
           </div>                  
           <Link to="/reset-password" className="forgot-password">Forgot password?</Link>                  

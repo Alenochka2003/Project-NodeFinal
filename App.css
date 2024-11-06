@@ -59,8 +59,9 @@
 .post-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 36px;
   padding: 20px;
+  width: 600px;
 }
 
 .overlay {
@@ -80,4 +81,17 @@
   padding: 20px;
   border-radius: 8px;
   max-width: 300px;
+}
+.app-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; 
+}
+
+.content {
+ /* margin-left: 123px;
+ width: 975px; */
+ margin-top: 89px;
 }

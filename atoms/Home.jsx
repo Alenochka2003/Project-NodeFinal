@@ -68,6 +68,9 @@
 import PropTypes from 'prop-types';
 import Sidebar from '../components/SideBar/SideBar';
 import PostGrid from '../components/SideBar/PostGrid';
+// import Explore from '../Pages/Explore/Explore';
+import './Home.css';
+
 import { useEffect, useState } from 'react';
 import { $api } from '../api/api';
 
@@ -79,7 +82,7 @@ export const Home = () => {
     try {
       const response = await $api.get('/post/all'
       );
-      const data = await response.json();
+      const data = await response.data;
       setPosts(data);
     } catch (error) {
       console.error('Error fetching posts:', error);
@@ -98,13 +101,23 @@ export const Home = () => {
 
   return (
     <>
-      <Sidebar onCreatePost={handleCreatePost} />
-      {loading ? (
-        <p>Loading posts...</p>
-      ) : (
-        <PostGrid posts={posts} />
-      )}
-    </>
+        <Sidebar onCreatePost={handleCreatePost} />
+        {loading ? (
+          <p>Loading posts...</p>
+        ) : (
+          <PostGrid posts={posts} />
+        )}
+      </>
+
+    // <>
+    //   <Sidebar onCreatePost={handleCreatePost} />
+    //   {loading ? (
+    //     <p>Loading posts...</p>
+    //   ) : (
+    //     <PostGrid posts={posts} />
+       
+    //   )}
+    // </>
   );
 };
 

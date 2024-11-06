@@ -1,0 +1,86 @@
+
+   /* .explore-grid {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 317px);
+    gap: 4px; 
+    width: 500px;
+    margin-top: 50px; 
+    
+  }
+  
+  .explore-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .explore-image.tall {
+    grid-row: span 2; 
+    height: 636px;
+  }
+   */
+  
+ 
+  /* Define specific sizes for each image */
+  /* .explore-image.car,
+  .explore-image.Girl_blond,
+  .explore-image.man,
+  .explore-image.japan,
+  .explore-image.man_with_cap,
+  .explore-image.zontik,
+  .explore-image.Girl_brunet,
+  .explore-image.Gory {
+    width: 317px;
+    height: 317px;
+  }
+  
+  .explore-image.Windows,
+  .explore-image.doroga {
+    width: 317px;
+    height: 636px;
+  } */
+
+ 
+  /* .explore-container {
+    padding-top: 50px; 
+    display: grid;
+    justify-content: center;
+  } */
+  
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 изображения в ряд */
+    gap: 4px; /* Отступы между изображениями */
+    max-width: 600px; 
+  }
+  
+
+
+  .explore-image {
+    /* width: 100%; */
+    height: auto;
+    object-fit: cover;
+  
+  }
+  .explore-image.tall {
+    grid-row: span 2; 
+    height: 635px; 
+  }
+  /* .explore-image.car,
+  .explore-image.Girl_blond,
+  .explore-image.man,
+  .explore-image.japan,
+  .explore-image.man_with_cap,
+  .explore-image.zontik,
+  .explore-image.Girl_brunet,
+  .explore-image.Gory {
+    width: 317px;
+    height: 317px;
+  }
+  
+  .explore-image.Windows,
+  .explore-image.doroga {
+    width: 317px;
+    height: 636px;
+  } */

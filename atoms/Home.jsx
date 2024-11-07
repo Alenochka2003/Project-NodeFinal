@@ -95,12 +95,18 @@ export const Home = () => {
     fetchPosts();
   }, []);
 
-  const handleCreatePost = (newPost) => {
-    setPosts((prevPosts) => [newPost, ...prevPosts]); // Добавляем новый пост в начало массива постов
+  // const handleCreatePost = (newPost) => {
+  //   setPosts((prevPosts) => [newPost, ...prevPosts]); // Добавляем новый пост в начало массива постов
+  // };
+  const handleCreatePost = async () => {
+    const newPost = await fetchPosts();
+    if (newPost) {
+      setPosts((prevPosts) => [...prevPosts, newPost]);
+    }
   };
-
   return (
     <>
+    
         <Sidebar onCreatePost={handleCreatePost} />
         {loading ? (
           <p>Loading posts...</p>
@@ -109,19 +115,11 @@ export const Home = () => {
         )}
       </>
 
-    // <>
-    //   <Sidebar onCreatePost={handleCreatePost} />
-    //   {loading ? (
-    //     <p>Loading posts...</p>
-    //   ) : (
-    //     <PostGrid posts={posts} />
-       
-    //   )}
-    // </>
+ 
   );
 };
 
 Home.propTypes = {
   state: PropTypes.bool
-  // Можно добавить другие PropTypes, если необходимо
+  
 };

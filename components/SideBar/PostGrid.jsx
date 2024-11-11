@@ -33,14 +33,14 @@
 
 import PropTypes from 'prop-types';
 import './PostGrid.css';
-import Osen from './svg/Osen.png';
+// import Osen from './svg/Osen.png';
 
 function PostGrid({ posts }) {
   return (
     <div className="post-grid">
        {posts.map((post, index) => (
         <div key={index} className="post-item">
-          <img src={Osen} alt="Post Image" className="post-image" />
+          <img src={post.image_url} alt="Post Image" className="post-image" />
           <p>{post.content}</p>
         </div>
       ))}

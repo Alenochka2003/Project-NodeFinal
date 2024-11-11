@@ -66,9 +66,8 @@
 
 
 import PropTypes from 'prop-types';
-import Sidebar from '../components/SideBar/SideBar';
+// import Sidebar from '../components/SideBar/SideBar';
 import PostGrid from '../components/SideBar/PostGrid';
-// import Explore from '../Pages/Explore/Explore';
 import './Home.css';
 
 import { useEffect, useState } from 'react';
@@ -98,23 +97,19 @@ export const Home = () => {
   // const handleCreatePost = (newPost) => {
   //   setPosts((prevPosts) => [newPost, ...prevPosts]); // Добавляем новый пост в начало массива постов
   // };
-  const handleCreatePost = async () => {
-    const newPost = await fetchPosts();
-    if (newPost) {
-      setPosts((prevPosts) => [...prevPosts, newPost]);
-    }
-  };
+  
   return (
-    <>
+
     
-        <Sidebar onCreatePost={handleCreatePost} />
+        <div width="100%">
         {loading ? (
           <p>Loading posts...</p>
         ) : (
           <PostGrid posts={posts} />
+          
         )}
-      </>
-
+        </div>
+    
  
   );
 };

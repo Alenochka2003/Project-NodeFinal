@@ -68,9 +68,10 @@
 
   .login-container {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: 32px;
     padding: 20px;
 
@@ -79,7 +80,9 @@
 }
 
 .login-image {
-    width: 50%;
+
+    /* width: 50%; */
+    /* margin-left: 86px; */
     align-items: start;
     background: url('Backround.png') no-repeat center center;
     background-size: cover;
@@ -87,7 +90,7 @@
 }
 
 .login-form-container {
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
      /* margin-left: 32px;
@@ -124,7 +127,7 @@
 }
 
 .login-button {
-  width: 100%;
+  width: 95%;
     padding: 10px;
     margin-top: 10px;
     background-color: #0095f6;

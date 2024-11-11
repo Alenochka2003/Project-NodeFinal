@@ -28,8 +28,8 @@ body {
   /* padding: 81px; */
   display: flex;
   place-items: center;
-  /* width: 1440px;
-   */
+  max-width: 1440px;
+  
 }
 
 h1 {

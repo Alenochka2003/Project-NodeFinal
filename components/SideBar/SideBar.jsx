@@ -12,6 +12,7 @@ import Img_Create from "./svg/Img_Create.svg";
 import ICH from "./svg/ICH.svg";
 import PropTypes from 'prop-types';
 
+
 function Sidebar({ onCreatePost }) {
   const [activeTab, setActiveTab] = useState(''); // Используем activeTab вместо activePanel
   const [showModal, setShowModal] = useState(false);

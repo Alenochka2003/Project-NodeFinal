@@ -168,6 +168,6 @@ padding: 15px;
 }
 
 .sidebar-button.active {
-  color: black; /* активный цвет для нажатой кнопки */
+  color: black; 
   font-weight: bold;
 }

@@ -65,7 +65,66 @@
 //   }
 
 
+// import PropTypes from 'prop-types';
+// import Footer from '../components/Footer/Footer';
+// // import Sidebar from '../components/SideBar/SideBar';
+// import PostGrid from '../components/SideBar/PostGrid';
+// import './Home.css';
+
+// import { useEffect, useState } from 'react';
+// import { $api } from '../api/api';
+
+// export const Home = () => {
+//   const [posts, setPosts] = useState([]);
+//   const [loading, setLoading] = useState(true);
+
+//   const fetchPosts = async () => {
+//     try {
+//       const response = await $api.get('/post/all'
+//       );
+//       const data = await response.data;
+//       setPosts(data);
+//     } catch (error) {
+//       console.error('Error fetching posts:', error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   useEffect(() => {
+//     fetchPosts();
+//   }, []);
+
+//   // const handleCreatePost = (newPost) => {
+//   //   setPosts((prevPosts) => [newPost, ...prevPosts]); // Добавляем новый пост в начало массива постов
+//   // };
+  
+//   return (
+
+  
+
+
+//         <div width="100%">
+//         {loading ? (
+//           <p>Loading posts...</p>
+//         ) : (
+//           <PostGrid posts={posts} />
+       
+
+//         )}
+//         </div>
+   
+//   );
+
+// };
+
+// Home.propTypes = {
+//   state: PropTypes.bool
+  
+// };
+
 import PropTypes from 'prop-types';
+import Footer from '../components/Footer/Footer';
 // import Sidebar from '../components/SideBar/SideBar';
 import PostGrid from '../components/SideBar/PostGrid';
 import './Home.css';
@@ -79,8 +138,7 @@ export const Home = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await $api.get('/post/all'
-      );
+      const response = await $api.get('/post/all');
       const data = await response.data;
       setPosts(data);
     } catch (error) {
@@ -94,27 +152,20 @@ export const Home = () => {
     fetchPosts();
   }, []);
 
-  // const handleCreatePost = (newPost) => {
-  //   setPosts((prevPosts) => [newPost, ...prevPosts]); // Добавляем новый пост в начало массива постов
-  // };
-  
   return (
-
-    
-        <div width="100%">
-        {loading ? (
-          <p>Loading posts...</p>
-        ) : (
+    <div style={{ width: '100%' }}>
+      {loading ? (
+        <p>Loading posts...</p>
+      ) : (
+        <>
           <PostGrid posts={posts} />
-          
-        )}
-        </div>
-    
- 
+          <Footer />
+        </>
+      )}
+    </div>
   );
 };
 
 Home.propTypes = {
-  state: PropTypes.bool
-  
+  state: PropTypes.bool,
 };

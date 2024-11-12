@@ -32,15 +32,32 @@
 
 .post-item {
   width: 402px;
-  background: #fafafa;
+  /* background: #fafafa; */
+  /* border-left: hidden; */
+  /* border-right: hidden; */
   border: 1px solid #ddd;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
   /* border-radius: 8px; */
   overflow: hidden;
 }
 
+.header_container{
+
+ display:flex;
+ gap: 10px ;
+ 
+ 
+}
+
+.header_container a{
+  padding: 20px;
+}
 .post-image {
   width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 .post-caption {

@@ -69,6 +69,7 @@ padding: 15px;
   width: 220px;
   justify-content: flex-start;
   gap: 16px; /* space between icon and text */
+
 }
 
 .icon-home {
@@ -109,10 +110,11 @@ padding: 15px;
 новые стили 
 
 .menu-item-container.active {
+
   background-color: #e0e0e0; /* or any other style */
  transition:  transform 0.3s ease; 
 }
-
+/* 
 .overlay {
   position: fixed;
   top: 0;
@@ -124,7 +126,7 @@ padding: 15px;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-}
+} */
 
 .modal {
   background: white;
@@ -171,3 +173,6 @@ padding: 15px;
   color: black; 
   font-weight: bold;
 }
+
+
+

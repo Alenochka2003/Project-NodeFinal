@@ -228,6 +228,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Chat.css';
 
+
 function Chat({ chat }) {
   const [messages, setMessages] = useState([
     {
@@ -295,8 +296,12 @@ function Chat({ chat }) {
         />
         <button onClick={handleSendMessage}>Send</button>
       </div>
+     
     </div>
+    
   );
+
+ 
 }
 
 Chat.propTypes = {

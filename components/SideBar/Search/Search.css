@@ -12,9 +12,9 @@
 
   
 
-   .search {
+  .search {
     width: 400px;
-    /* position: absolute; */
+  
     left: 245px;
     border-right: 1px solid #dbdbdb;
     padding: 24px 16px;
@@ -78,4 +78,6 @@
 
   .s_im{
     
-  }
+  } 
+
+

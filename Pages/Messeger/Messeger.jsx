@@ -122,8 +122,12 @@ function Messages() {
         ))}
       </div>
       {selectedChat && <Chat chat={selectedChat} />}
+      
     </div>
+
+    
   );
 }
 
+  
 export default Messages;

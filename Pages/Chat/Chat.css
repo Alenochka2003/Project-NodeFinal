@@ -1,4 +1,4 @@
-.chat {
+/* .chat {
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    /* max-width: 60%; */
+ 
     word-wrap: break-word;
   }
   
@@ -73,12 +73,11 @@
   .nikita_logo {
     border-radius: 50%;
     padding: 16px;
-    /* width: 44px; 
-    height: 44px;  */
+ 
   }
   
  .chat-input {
-    /* width: calc(100% - 70px); */
+ 
 
     padding: 10px;
     margin-right: 10px;
@@ -98,5 +97,194 @@
   
   button:hover {
     background-color: #6057d7;
+  }
+   */
+
+   /* .chat {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .profile-button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-timestamp {
+    color: #999;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .messages-thread {
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .other-message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .user-message {
+    background-color: #4a4aff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+  
+  .message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+   */
+
+   .chat {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .chat-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 15px; */
+    width: 100%;
+    
+   
+    /* padding-bottom: 10px;
+    margin-bottom: 20px; */
+  }
+  .log_name{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgb(199, 195, 195);
+    
+  }
+  .chat-avatar1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .chat-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+  }
+  
+  .profile-button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .chat-header h3{
+    margin: 0px;
+   
+  }
+.chat-header p{
+margin: 0px;
+}
+
+  .chat-timestamp {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    /* margin: 10px 0; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+  }
+  
+  .messages-thread {
+    flex-grow: 1;
+    overflow-y: auto ;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .other-message {
+    flex-direction: row;
+  }
+  
+  .user-message {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .message p {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .user-message p {
+    background-color: #4c8bf5;
+    color: white;
+  }
+  
+  .message-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
   }
   

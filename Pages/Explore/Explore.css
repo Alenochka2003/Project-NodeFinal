@@ -49,6 +49,7 @@
   } */
   
   .explore-grid {
+    padding:20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 изображения в ряд */
     gap: 4px; /* Отступы между изображениями */

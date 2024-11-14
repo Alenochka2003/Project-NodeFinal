@@ -1,60 +1,54 @@
 
-// import SearchInput from "./SearchInput";
-
-// export default function Search() {
-//   return (
-//     <div className="p-6">
-//       <p className="text-2xl font-semibold">Search</p>
-//       <SearchInput mt={"40px"} />
-//       <p className="pt-[46px] text-base font-semibold">Recent</p>
-//     </div>
-//   );
-// }
-
 // import { useState } from 'react';
 // import SearchInput from './SearchInput';
+// import user from '../../../assets/Container.png';
 
 // export default function Search() {
-//   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+//   const [searchQuery, setSearchQuery] = useState(''); // using useState here
 
-//   const toggleSidebar = () => {
-//     setIsSidebarOpen(!isSidebarOpen);
+//   const handleSearchChange = (event) => {
+//     setSearchQuery(event.target.value);
 //   };
 
 //   return (
-//     <div className="p-6">
-//       <button onClick={toggleSidebar} className="text-2xl font-semibold">
-//         Search
-//       </button>
-//       <div
-//         className={`search-sidebar ${isSidebarOpen ? 'open' : ''}`}
-//         style={{
-//           transform: isSidebarOpen ? 'translateX(0)' : 'translateX(-100%)',
-//           transition: 'transform 0.3s ease', width:"397px",
-//         }}
-//       >
-//         <SearchInput mt="40px"/>
+//     <div className="search-container">
+//       <div className="search-sidebar">
+//         <SearchInput mt="40px" onChange={handleSearchChange} value={searchQuery} />
 //       </div>
-//       <p className="pt-[46px] text-base font-semibold">Recent</p>
+//       <p className=" font-semibold">Recent</p>
+//       <ul className="list">
+//                     <li>
+//                         <img src={user} alt="User avatar" />
+//                         <span>sashaa</span>
+//                     </li>
+//                 </ul>
 //     </div>
 //   );
 // }
-import { useState } from 'react';
-import SearchInput from './SearchInput';
 
-export default function Search() {
-  const [searchQuery, setSearchQuery] = useState(''); // using useState here
+import './Search.css';
+import user from '../../../assets/Container.png';
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-
-  return (
-    <div className="search-container">
-      <div className="search-sidebar">
-        <SearchInput mt="40px" onChange={handleSearchChange} value={searchQuery} />
-      </div>
-      <p className="pt-[46px] text-base font-semibold">Recent</p>
-    </div>
-  );
+const SearchMenu = () => {
+    return (
+        <div className="search">
+            <div className="search_container">
+                <span className="heading">Search</span>
+                <div className='s_im'>
+                    <input className="input_s" type="text" placeholder="Search" />
+                    <button className="xButton">X</button>
+                </div>
+                <span className="subHeading">Recent</span>
+               
+            </div>
+            <ul className="list_search">
+                    <li>
+                        <img src={user} alt="User avatar" />
+                        <span>sashaa</span>
+                    </li>
+                </ul>
+        </div>
+    );
 }
+
+export default SearchMenu;

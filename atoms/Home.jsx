@@ -123,18 +123,67 @@
   
 // };
 
+// import PropTypes from 'prop-types';
+// import Footer from '../components/Footer/Footer';
+
+// import PostGrid from '../components/SideBar/PostGrid';
+// import './Home.css';
+
+// import { useEffect, useState } from 'react';
+// import { $api } from '../api/api';
+
+// export const Home = () => {
+//   const [posts, setPosts] = useState([]);
+//   const [loading, setLoading] = useState(true);
+
+//   const fetchPosts = async () => {
+//     try {
+//       const response = await $api.get('/post/all');
+//       const data = await response.data;
+//       setPosts(data);
+//     } catch (error) {
+//       console.error('Error fetching posts:', error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   useEffect(() => {
+//     fetchPosts();
+//   }, []);
+
+//   return (
+//     <div style={{ width: '100%' }}>
+//       {loading ? (
+//         <p>Loading posts...</p>
+//       ) : (
+//         <>
+       
+//           <PostGrid posts={posts} />
+//           <Footer />
+//         </>
+//       )}
+//     </div>
+//   );
+// };
+
+// Home.propTypes = {
+//   state: PropTypes.bool,
+// };
+
+
 import PropTypes from 'prop-types';
 import Footer from '../components/Footer/Footer';
-// import Sidebar from '../components/SideBar/SideBar';
 import PostGrid from '../components/SideBar/PostGrid';
 import './Home.css';
-
 import { useEffect, useState } from 'react';
 import { $api } from '../api/api';
+import Search from '../components/SideBar/Search/Search';
 
 export const Home = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const fetchPosts = async () => {
     try {
@@ -152,8 +201,14 @@ export const Home = () => {
     fetchPosts();
   }, []);
 
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
   return (
     <div style={{ width: '100%' }}>
+      {isSearchOpen && <Search onClose={toggleSearch} />}
+      
       {loading ? (
         <p>Loading posts...</p>
       ) : (
@@ -162,6 +217,7 @@ export const Home = () => {
           <Footer />
         </>
       )}
+      
     </div>
   );
 };

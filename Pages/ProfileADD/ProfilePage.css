@@ -1,0 +1,43 @@
+/* Контейнер страницы */
+.profile-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Обертка для постов */
+  .posts-wrapper {
+    margin-top: 20px;
+  }
+  
+  /* Сетка постов */
+  .posts-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  /* Карточка поста */
+  .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Изображения постов */
+  .post-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Анимация загрузки */
+  .loading-spinner {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  

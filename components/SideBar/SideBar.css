@@ -1,4 +1,4 @@
-/* Sidebar.css */
+Sidebar.css
 
 .sidebar {
   position: relative;
@@ -6,12 +6,12 @@
 }
 
 .log_logo {
-  /* margin-top: 28px; */
+ 
 padding: 15px;
   width: 97px;
   
  
-  /* height: 106px; */
+  
 }
 
 .sidebar .menu {
@@ -32,8 +32,8 @@ padding: 15px;
 }
 
 .sidebar .menu li a {
-  color: black; /* Set link color to black */
-  text-decoration: none; /* Optional: removes underline */
+  color: black; 
+  text-decoration: none; 
   
 }
 
@@ -68,21 +68,19 @@ padding: 15px;
   align-items: center;
   width: 220px;
   justify-content: flex-start;
-  gap: 16px; /* space between icon and text */
+  gap: 16px; 
 
 }
 
 .icon-home {
   font-size: 16px;
 
-  /* width: 20px;
-  height: 20px;
-  margin-right: 8px;  */
+
 }
 
  /* доработать  */
 /* PostGrid.css */
-.post-grid {
+ .post-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -105,28 +103,16 @@ padding: 15px;
   padding: 10px;
   font-size: 14px;
   color: #333;
-}
+} 
 
-новые стили 
 
-.menu-item-container.active {
 
-  background-color: #e0e0e0; /* or any other style */
+ /* .menu-item-container.active {
+
+  background-color: #e0e0e0;
  transition:  transform 0.3s ease; 
-}
-/* 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
 } */
+
 
 .modal {
   background: white;
@@ -165,14 +151,14 @@ padding: 15px;
   margin-top: 15px;
 }
 .sidebar-button {
-  color: #777; /* спокойный цвет для неактивной кнопки */
+  color: #777; 
   cursor: pointer;
 }
 
 .sidebar-button.active {
   color: black; 
   font-weight: bold;
-}
+} 
 
 
 

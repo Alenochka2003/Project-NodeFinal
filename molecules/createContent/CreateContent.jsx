@@ -1,7 +1,7 @@
 
 import s from "./CreateContent.module.css";
-import  ImageForm  from '../ImageForm';
-import ModalCreatePost from '../createContent/ModalCreatePost';
+import  ImageForm  from '../sidebar/ImageForm';
+import ModalCreatePost from './ModalCreatePost';
 
 const CreateContent = () => {
   return (

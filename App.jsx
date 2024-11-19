@@ -14,6 +14,7 @@ import Sidebar from './components/SideBar/SideBar';
 import Messeger from './Pages/Messeger/Messeger';
 import Search from './components/SideBar/Search/Search';
 import NotificationContent from '../../backend/be-social/src/models/notificationModel';
+
 // import UserId from './Pages/Profile/UserId';
 import ProfilePage from './Pages/ProfileADD/ProfilePage';
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/messages" element={<Messeger />} />
           <Route path="/search" element={<Search />} />
           <Route path='notifications' element={<NotificationContent />} />
+          
           {/* <Route path='profile' element={<UserId />} /> */}
           <Route path='profile' element={<ProfilePage />} />
           {/* <Route path="/home" element={<PostGrid />} /> */}

@@ -1,7 +1,7 @@
 import  { useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Notification = ({ message, type, onClose, duration = 3000 }) => {
+const Notification = ({ message, type, onClose, duration = 5000 }) => {
   useEffect(() => {
     const timer = setTimeout(() => onClose(), duration);
     return () => clearTimeout(timer);
